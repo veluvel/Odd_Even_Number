@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sum of odd number and even number in given input</h1>
+    <script>
+      // sum of odd number and even number in given input
+      let n = parseInt(prompt("Counts"));
+      let even = 0;
+      let odd = 0;
+      for (let i = 1; i <= n; i++) {
+        let m = parseInt(prompt("enter the number"));
+        if (m % 2 == 0) {
+          even = even + m;
+        } else {
+          odd = odd + m;
+        }
+      }
+      console.log(`The sum of even number is : ${even}`);
+      console.log(`The sum of odd number is : ${odd}`);
+    </script>
+  </body>
+</html>
